@@ -10,9 +10,39 @@ public class User{
     @Id
     @GeneratedValue
     private Long id;
-    private String username;
     private String name;
+    private String username;
     private String email;
+    private Integer phone;
+    private String address;
+    private Integer totalOrders;
+
+
+    public Integer getPhone() {
+        return phone;
+    }
+
+    public void setPhone(Integer phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Integer getTotalOrders() {
+        return totalOrders;
+    }
+
+    public void setTotalOrders(Integer totalOrders) {
+        this.totalOrders = totalOrders;
+    }
+
+
 
     public Long getId() {
         return id;
