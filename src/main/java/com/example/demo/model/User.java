@@ -10,12 +10,23 @@ public class User{
     @Id
     @GeneratedValue
     private Long id;
+    private String title;
     private String name;
     private String username;
     private String email;
+    private String password;
     private Integer phone;
     private String address;
     private Integer totalOrders;
+
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
 
     public Integer getPhone() {
@@ -74,5 +85,12 @@ public class User{
 
     public void setEmail(String email) {
         this.email = email;
+    }
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
